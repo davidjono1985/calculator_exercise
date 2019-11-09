@@ -15,6 +15,16 @@ def get_user_input
     result = num1 - num2
     puts result
   end
+  def divide
+    num1, num2 = get_user_input()
+    result = num1 - num2
+    puts result
+  end
+  def multiply
+    num1, num2 = get_user_input()
+    result = num1 - num2
+    puts result
+  end
   quit = false
   until quit do
     puts "Options"
@@ -35,21 +45,14 @@ def get_user_input
       result = num1 - num2
       puts result
     when "3"
-      puts "Whats your first number?"
-      num1 = gets.chomp.to_i
-      puts "What's your second number?"
-      num2 = gets.chomp.to_i
+      divide()
       result = num1 / num2
       puts result
     when "4"
-      puts "Whats your first number?"
-      num1 = gets.chomp.to_i
-      puts "What's your second number?"
-      num2 = gets.chomp.to_i
+      multiply()
       result = num1 * num2
       puts result
     when "q"
       quit = true
     end
   end
-  
